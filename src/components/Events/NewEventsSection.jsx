@@ -11,6 +11,7 @@ export default function NewEventsSection() {
 		queryFn: fetchEvents,
 		staleTime: 3000,
 	});
+  
 
 	let content;
 
