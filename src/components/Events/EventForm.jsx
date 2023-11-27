@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useQuery } from "@tanstack/react-query"
-
+import ErrorBlock from "../UI/ErrorBlock.jsx";
 import ImagePicker from '../ImagePicker.jsx';
 import { fetchSelectableImages } from "../../Utility/http.js"
 
@@ -62,7 +62,7 @@ export default function EventForm({ inputData, onSubmit, children }) {
           defaultValue={inputData?.description ?? ''}
         />
       </p>
-cl
+
       <div className="controls-row">
         <p className="control">
           <label htmlFor="date">Date</label>
